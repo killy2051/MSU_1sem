@@ -19,6 +19,7 @@ int gcd(int a, int b)
 
 //INPUT: Two non-negative integers a and b.
 //OUTPUT: d = gcd(a, b) and integers x and y satifying ax + by = d.
+void gcdext (int a, int b, int *d, int *x, int *y)
 {
   int s;
 
