@@ -10,7 +10,7 @@ int gcd(int a, int b)
 }
 
 /*
-Функция gcdext(int a, int b, int *d, int *x, int *y), приведенная ниже,
+Функция gcdExt(int a, int b, int *d, int *x, int *y), приведенная ниже,
 по входным числам a и b находит d = НОД(a, b) и такие x, y что d = a · x + b · y.
 Для поиска неизвестных x и y необходимо рекурсивно запустить функцию gcdext(b, a mod b, d, x, y)
 и пересчитать значения x и y по выше приведенной формуле. Рекурсия заканчивается,
@@ -19,7 +19,7 @@ int gcd(int a, int b)
 
 //INPUT: Two non-negative integers a and b.
 //OUTPUT: d = gcd(a, b) and integers x and y satifying ax + by = d.
-void gcdext (int a, int b, int *d, int *x, int *y)
+void gcdExt (int a, int b, int *d, int *x, int *y)
 {
   int s;
 
