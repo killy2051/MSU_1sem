@@ -17,9 +17,8 @@
   int P[50];
   
 void output(partition a)
-*
-**  print out the partition a
-*/
+
+//  print out the partition a
 {
  int i,j;
  printf("%d = ",a.m);
@@ -50,9 +49,9 @@ void output(partition a)
 }
 
 void EnumPartitions(int m, int n )
-*
-**  compute the partition numbers P[i] and P[i,j] for i <= m, j <= n
-*/
+//
+// compute the partition numbers P[i] and P[i,j] for i <= m, j <= n
+//
 {
  int i,j;
  Pn[0][0] =  1;
@@ -74,9 +73,9 @@ void EnumPartitions(int m, int n )
 }
 
 void PartitionLexUnrank(int m, int n, int r, partition *a)
-*
-**  find the partition of m into n parts having rank r
-*/
+//
+//  find the partition of m into n parts having rank r
+//
 {
   int i;
   EnumPartitions(m,n);
