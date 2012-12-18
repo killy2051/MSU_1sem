@@ -14,7 +14,7 @@ void read_partition(int s[], int *n, int *k)
 {
 	printf("Enter n and k\n");
 	scanf("%d %d",n,k);
-	printf("Enter S[]\n");
+	printf("Enter S[] one number at a time, press Enter after every number\n)");
 	for (int i=1; i<=*n; i++)
 		scanf("%d",&(s[i]));
 }
@@ -35,6 +35,7 @@ int print_dots(int s[], int start, int end)
 
 	for (i=start; i<=end; i++)
 			fprintf(out, "%d ",s[i]);
+	fclose(out);
 }
 
 void reconstruct_partition(int s[],int d[MAXN+1][MAXK+1], int n, int k)
